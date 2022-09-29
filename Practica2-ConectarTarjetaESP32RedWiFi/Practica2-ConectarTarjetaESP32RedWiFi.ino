@@ -8,8 +8,11 @@
 
 #include <WiFi.h>
 
-const char* ssid = "UC3M-LABS";
-const char* password =  "Uc3M.L4b.2020";
+const char* ssid = "DIGIFIBRA-bdD7";
+const char* password =  "xTPy4PHuY3";
+
+//const char* ssid = "UC3M-LABS";
+//const char* password =  "Uc3M.L4b.2020";
 
 void setup()
 {
