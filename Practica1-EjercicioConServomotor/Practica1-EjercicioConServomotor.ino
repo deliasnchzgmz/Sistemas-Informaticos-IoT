@@ -2,8 +2,8 @@
   Asignatura: Sistemas Informáticos en IoT
   Práctica 1 - Ejercicio con servomotor: solución
   Enunciado del ejercicio en la transparencia 17 de la práctica 1 
-  David Martín Gómez
-  dmgomez@ing.uc3m.es
+  David Martín Gómez            
+  dmgomez@ing.uc3m.es                                                                                                                                                            
 */
 
 #include <Servo.h>
