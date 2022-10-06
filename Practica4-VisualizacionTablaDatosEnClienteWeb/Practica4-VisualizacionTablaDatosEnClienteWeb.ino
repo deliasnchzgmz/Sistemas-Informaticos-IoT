@@ -16,8 +16,8 @@ BME280 mySensor; // Declaración de mySensor para conexión del sensor BME280 a 
 //const char* ssid = "UC3M-LABS"; //conectar tarjetaESP32 y PC a la misma red
 //const char* password =  "Uc3M.L4b.2020"; //conectar tarjetaESP32 y PC a la misma red
 
-const char* ssid = "MiFibra-BD86"; //conectar tarjetaESP32 y PC a la misma red
-const char* password =  "L4r93473"; //conectar tarjetaESP32 y PC a la misma red
+const char* ssid = "DIGIFIBRA-bdD7";
+const char* password =  "xTPy4PHuY3";
 
 WiFiServer server(80);
 
