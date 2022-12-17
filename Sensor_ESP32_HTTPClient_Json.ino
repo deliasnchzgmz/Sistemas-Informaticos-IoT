@@ -1,4 +1,4 @@
-/*
+  /*
   Asignatura: Sistemas Informáticos en IoT
   Practica6 - Prueba 2. Método POST en cliente ESP32
   Funcionamiento: prueba de método POST en cliente ESP32 para envío de datos a servidor Flask en PC
@@ -173,8 +173,9 @@ void loop() {
     doc["gas"] = gas;
 
     if(rfid_key.equals("")){
-      doc["keys"] = "no key";
+      doc["keys"] = "000";
     }else{
+      rfid_key.replace(" ", "");
       doc["keys"] = rfid_key;
       rfid_key = "";
     }
