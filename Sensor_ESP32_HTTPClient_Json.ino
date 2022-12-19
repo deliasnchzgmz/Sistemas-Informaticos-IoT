@@ -25,6 +25,9 @@
 //RST --> G27
 //3V3 --> 3V3
 
+//Sonido
+//+ --> G17
+//- --> GND
 
 */
 
@@ -42,18 +45,25 @@ BME280 mySensor;
 #define DIGITAL 2
 #define THRESHOLD 800
 #define NOTE_A4  440 //nota LA4
-#define BUZZER 18 //Conecto el pin 18 al buzzer
+#define BUZZER 17 //Conecto el pin 17 al buzzer
 #define SS_PIN 5
 #define RST_PIN 27
 
 //const char* ssid = "UC3M-LABS";
 //const char* password =  "Uc3M.L4b.2020";
 
+//const char* ssid = "Mi 9T Pro";
+//const char* password =  "58cc20cc7f74";
+
+
+const char* ssid = "Mitelf";
+const char* password =  "qwertyuiop";
+
 //const char* ssid = "AndroidMARTA";
 //const char* password =  "Anacris66";
 
-const char* ssid = "ONO4948,";
-const char* password =  "HakunaMatata7777";
+//const char* ssid = "ONO4948,";
+//const char* password =  "HakunaMatata7777";
 
 //Variables RFID
 byte nuidPICC[4] = {0, 0, 0, 0};
@@ -188,8 +198,8 @@ void loop() {
 
     HTTPClient http;
   
-    //http.begin("http://192.168.125.39:5000/sensor_values");   //"http://10.118.68.110:5000/sensor_values"
-    http.begin("http://192.168.0.27:5000/sensor_values");
+    http.begin("http://192.168.21.116:5000/sensor_values");   
+    //http.begin("http://192.168.0.27:5000/sensor_values");
     http.addHeader("Content-Type", "application/json");
     
 

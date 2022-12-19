@@ -48,9 +48,8 @@ def read_sensors():
 
         
 
-
-        ##measurement_data = str(content['measure'])
-        measurement_data = "BME280"
+        ##measurement_data = "BME280"
+        measurement_data = str(content['measure'])
         temperature_name = "Temperature"
         gas_name = "Gas"
         key_name = "RFIDKeys"
