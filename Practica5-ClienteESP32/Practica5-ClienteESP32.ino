@@ -13,8 +13,11 @@
 
 BME280 mySensor; // Declaración de mySensor para conexión del sensor BME280 a través de I2C
 
-const char* ssid = "Mitelf";
-const char* password =  "qwertyuiop";
+/*const char* ssid = "Mitelf";
+const char* password =  "qwertyuiop";*/
+
+const char* ssid = "DIGIFIBRA-bdD7";
+const char* password =  "xTPy4PHuY3";
 
 WiFiClient wifi;
 
@@ -53,8 +56,8 @@ void loop() {
     int altitude = mySensor.readFloatAltitudeMeters();
     float humidity = mySensor.readFloatHumidity();
     int pressure = mySensor.readFloatPressure();
-    
-    http.begin("http://192.168.91.114:5000/sensor_values?temperature=72&pressure=20&altitude=600&humidity=67");
+
+    http.begin("http://192.168.1.138:5000/sensor_values?temperature="+String(temperature)+"&pressure="+String(pressure)+"&altitude="+String(altitude)+"&humidity="+String(humidity));
 
     //String s = "http://192.168.91.114:5000/sensor_values?temperature="+temperature+"&pressure="+to_string(pressure)+"&altitude="+to_string(altitude)+"&humidity="+string to_string(humidity);
     //http.begin("http://192.168.91.114:5000/sensor_values?temperature="+temperature+"&pressure="+pressure+"&altitude="+altitude+"&humidity="+humidity);
