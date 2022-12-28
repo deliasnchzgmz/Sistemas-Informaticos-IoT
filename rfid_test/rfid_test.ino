@@ -19,7 +19,7 @@ void setup() {
   Serial.begin(230400);
   delay(1000);
   Serial.println("Initializing SPI......");
-  SPI.begin(18, 19, 23, 5); //SCK, MISO, MOSI, SS
+  SPI.begin(); //SCK, MISO, MOSI, SS
   delay(1000);
   rfid.PCD_Init(); // init MFRC522
   delay(1000);
